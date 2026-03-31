@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TF06 - Docker Compose</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #333;
+            margin: 0 0 20px 0;
+        }
+        .status {
+            font-size: 18px;
+            color: #27ae60;
+            margin: 10px 0;
+        }
+        .info {
+            font-size: 14px;
+            color: #555;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐳 TF06 - Docker Compose</h1>
+        <div class="status">✅ Nginx está rodando!</div>
+        <p style="color: #777;">Servidor web com orquestração Docker Compose</p>
+        
+        <div class="info">
+            <p><strong>Serviços Ativos:</strong></p>
+            <span class="badge">nginx</span>
+            <span class="badge">redis</span>
+            
+            <p style="margin-top: 20px;"><strong>Conectividade:</strong></p>
+            <p>Web consegue acessar cache em: <code style="background: #f0f0f0; padding: 2px 6px;">tf06-redis:6379</code></p>
+        </div>
+    </div>
+</body>
+</html>
